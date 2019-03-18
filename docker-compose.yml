@@ -1,0 +1,26 @@
+version: '3'
+services:
+  api:
+    build: .
+    volumes:
+      - .:/go/src/github.com/funnyface-inc/go-example
+    working_dir: "/go/src/github.com/funnyface-inc/go-example"
+    links:
+      - db
+      - redis
+    ports:
+      - "8000:8000"
+    tty: true
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: annotation-tool-development
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+    expose:
+      - "5432"
+  redis:
+    image: redis
+    expose:
+      - "6379"

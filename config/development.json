@@ -1,0 +1,21 @@
+{
+    "app": {
+        "port": ":8000"
+    },
+    "postgres": {
+        "host": "db",
+        "port": 5432,
+        "user": "root",
+        "password": "root",
+        "database": "annotation-tool-development",
+        "sslmode": "disable"
+    },
+    "redis": {
+        "host": "redis",
+        "port": 6379,
+        "max_connections": 1024,
+        "sessions": {
+            "expire": 2592000
+        }
+    }
+}
