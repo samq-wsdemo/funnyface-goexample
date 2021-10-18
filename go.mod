@@ -8,9 +8,8 @@ require (
 	github.com/gin-gonic/gin v1.3.0
 	github.com/go-sql-driver/mysql v1.4.1 // indirect
 	github.com/golang/protobuf v1.3.0 // indirect
-	github.com/jinzhu/gorm v1.9.2
-	github.com/jinzhu/inflection v0.0.0-20180308033659-04140366298a // indirect
-	github.com/lib/pq v1.0.0 // indirect
+	github.com/jinzhu/gorm v1.9.10
+	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/mattn/go-isatty v0.0.7 // indirect
 	github.com/spf13/viper v1.3.2
 	gopkg.in/go-playground/validator.v8 v8.18.2 // indirect
